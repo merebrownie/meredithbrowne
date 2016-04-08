@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UNCC SpotFinder</title>
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <!--<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(35.30757,-80.728552),
+          zoom: 15,
+          disableDefaultUI: true
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <!--<script>
+    function CustomMarker(latlng,  map) {
+      this.latlng_ = latlng;
+
+      // Once the LatLng and text are set, add the overlay to the map.  This will
+      // trigger a call to panes_changed which should in turn call draw.
+      this.setMap(map);
+    } 
+
+    CustomMarker.prototype = new google.maps.OverlayView();
+
+    CustomMarker.prototype.draw = function() {
+      var me = this;
+
+      // Check if the div has been created.
+      var div = this.div_;
+      if (!div) {
+        // Create a overlay text DIV
+        div = this.div_ = document.createElement('DIV');
+        // Create the DIV representing our CustomMarker
+        div.style.border = "none";
+        div.style.position = "absolute";
+        div.style.paddingLeft = "0px";
+        div.style.cursor = 'pointer';
+
+        var img = document.createElement("img");
+        img.src = "http://gmaps-samples.googlecode.com/svn/trunk/markers/circular/bluecirclemarker.png";
+        div.appendChild(img);
+        google.maps.event.addDomListener(div, "click", function(event) {
+          google.maps.event.trigger(me, "click");
+        });
+  
+        // Then add the overlay to the DOM
+        var panes = this.getPanes();
+        panes.overlayImage.appendChild(div);
+      }
+  
+      // Position the overlay 
+      var point = this.getProjection().fromLatLngToDivPixel(this.latlng_);
+      if (point) {
+        div.style.left = point.x + 'px';
+        div.style.top = point.y + 'px';
+      }
+    };
+
+    CustomMarker.prototype.remove = function() {
+      // Check if the overlay was on the map and needs to be removed.
+      if (this.div_) {
+        this.div_.parentNode.removeChild(this.div_);
+        this.div_ = null;
+      }
+    };
+
+    CustomMarker.prototype.getPosition = function() {
+     return this.latlng_;
+    };
+
+    var map;
+    var overlay;
+    function initialize() {
+      var opts = {
+        zoom: 15,
+        center: new google.maps.LatLng(35.30757,-80.728552),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      map = new google.maps.Map(document.getElementById("map"), opts);
+
+      overlay = new CustomMarker(map.getCenter(), map);
+      var iw = new google.maps.InfoWindow({content: "West Deck", pixelOffset: new google.maps.Size(5,0)});
+      iw.open(map, overlay);
+      google.maps.event.addListener(overlay, "click", function() {
+        iw.open(map, overlay);
+      });
+    }
+
+    function addOverlay() {
+      overlay.setMap(map);
+    }
+
+    function removeOverlay() {
+      overlay.setMap(null);
+    }
+  </script>-->
+    <!--<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var myLatLng = new google.maps.LatLng(35.30757,-80.728552);
+        var mapOptions = {
+          center: myLatLng,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        setMarkers(map, parking);
+      }
+      
+      var parking = [
+        ['West Deck', 35.304847,-80.7360622, 1],
+        ['East Deck', 35.3053168,-80.726902, 2],
+        ['Union Deck', 35.3091708,-80.7352826, 3]
+      ];
+      
+      function setMarkers(map, locations) {
+        var green = {
+          url: 'green.png',
+          size: new google.maps.Size(20, 32),
+          origin: new google.maps.Point(0,0),
+          anchor: new google.maps.Point(0, 32)
+        };
+        
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+        
+        for(var i = 0; i < locations.length; i++) {
+          var lots = locations[i];
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: green,
+            shape: shape,
+            title: lots[0],
+            zIndex: lots[3]
+          });
+        }
+      }
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>-->
+
+    </head>
+  <body>
+  
+    <!--TOP NAVIGATION BAR-->
+    <div id="header">
+      <img src="outline_star.png" height="45" width="45" class="topL" onclick="showFavs()">
+      <span class="captionL">Favorites</span>
+      <h1>SpotFinder</h1>
+      <img src="menu.png" height="45" width="45" class="topR" onclick="showMenu()">
+      <span class="captionR">Menu</span>
+    </div>
+    
+    <!--GOOGLE MAP-->
+    <div id="map-canvas">
+      <img src="http://maps.googleapis.com/maps/api/staticmap?center=35.3074531,-80.7353134&zoom=14&scale=false&size=320x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x929000%7Clabel:West Deck%7C35.304847,-80.7360622&markers=size:mid%7Ccolor:0x941100%7Clabel:East Deck%7C35.3053168,-80.726902&markers=size:mid%7Ccolor:0x008f00%7Clabel:Union Deck%7C35.3091708,-80.7352826" alt="Google Map of UNC-Charlotte"/>
+    </div>
+    
+    <!--BOTTOM NAVIGATION BAR-->
+    <div id="nav">
+      <img src="info.png" height="45" width="45">
+    </div>
+    
+    <!--FAVORITES POPUP-->
+    <div class="popup" id="fav">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showFavs(); closeEditFavs()">
+        <h2>Favorites</h2>
+      </div>
+      <img src="plus.png" class="icon" id="add" onclick="addFav()">
+      <p class="favorite" id="westDeck" onclick="westDeck()">
+        <img src="minus.png" class="icon remove" id="remove1" onclick="removeItem1()">
+        West Deck
+      </p>
+      <p class="favorite" id="eastDeck">
+        <img src="minus.png" class="icon remove" id="remove2" onclick="removeItem2()">
+        East Deck
+      </p>
+      <p class="favorite" id="unionDeck">
+        <img src="minus.png" class="icon remove" id="remove3" onclick="removeItem3()">
+        Lot 7
+      </p>
+      <button id="edit" class="edit" onclick="editFavs(); showSave()">Edit</button>
+      <button id="save" type="submit" class="save" onclick="save()">Save</button>
+    </div>
+    
+    <!--ADD FAVORITE MENU-->
+    <div id="addFav" class="popup">
+      <div class="title">
+        <img src="x.png" class="x" onclick="addFav()";>
+        <h2>Add Favorite</h2>
+      </div>
+      <form>
+      <select>
+        <optgroup label="C & F/S">
+          <option value="East Deck 2">East Deck 2</option>
+          <option value="East Deck 3">East Deck 3</option>
+          <option value="Union Deck">Union Deck</option>
+          <option value="West Deck">West Deck</option>
+          <option value="CRI Deck 1">CRI Deck 1</option>
+          <option value="Lot 4A">Lot 4A</option>
+          <option value="Lot 5/5A">Lot 5/5A</option>
+          <option value="Lot 7">Lot 7</option>
+          <option value="Lot 7A">Lot 7A</option>
+          <option value="Lot 14">Lot 14</option>
+          <option value="Lot 18/19">Lot 18/19</option>
+          <option value="Lot 23">Lot 23</option>
+          <option value="Lot 26">Lot 26</option>
+          <option value="CRI 2">CRI 2</option>
+        </optgroup>
+      </select>
+      <button type="submit" onclick="">Submit</button>
+      </form>
+    </div>
+    
+    <!--MENU POPUP-->
+    <div class="popup" id="menu">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showMenu()";>
+        <h2>Menu</h2>
+      </div>
+      <p>Profile</p>
+      <p onclick="showMenu(); showFavs()">Favorites</p>
+      <p onclick="showMenu(); showRecents()">Recents</p>
+    </div>
+    
+    <!--CONFIRM PARKING POPUP-->
+    <div class="popup" id="confirm">
+      <img src="x.png" class="x" onclick="toggleConfirm()">
+      <form>
+        <button onclick="showFavs();showFavs()">Back</button>
+      <p>
+        How full was the deck/lot?
+        <input type="range" step="20"/>
+      </p>
+      <p>
+        <button type="submit" onclick="dropFlag()">Submit</button>
+      </p>
+      </form>
+    </div>
+    <div id="flag"><img src="flag.png" height="50" width="50"></div>
+    
+    <!--RECENTS POPUP-->
+    <div class="popup" id="recents">
+      <img src="x.png" class="x" onclick="showRecents()">
+      <p class="recent">
+        <img src="outline_star.png" class="fav">
+        East Deck
+      </p>
+      <p class="recent" onclick="showRecents(); westDeck()">
+        <img src="outline_star.png" class="fav">
+        West Deck
+      </p>
+      <p class="recent">Cone Deck</p>
+      <p class="recent">Union Deck</p>
+      <p class="recent">Lot 21</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UNCC SpotFinder</title>
+    <link rel="stylesheet" href="style2.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  </head>
+  <body>
+  
+    <!--TOP NAVIGATION BAR-->
+    <div id="header">
+      <img src="outline_star.png" class="icon topL" onclick="showFavs()">
+      <span class="captionL">Favorites</span>
+      <h1>SpotFinder</h1>
+      <img src="menu.png" class="icon topR" onclick="showMenu()">
+      <span class="captionR">Menu</span>
+    </div>
+    
+    <!--GOOGLE MAP-->
+    <div id="map-canvas">
+      <img src="http://maps.googleapis.com/maps/api/staticmap?center=35.3074531,-80.7353134&zoom=14&scale=false&size=320x480&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x929000%7Clabel:West Deck%7C35.304847,-80.7360622&markers=size:mid%7Ccolor:0x941100%7Clabel:East Deck%7C35.3053168,-80.726902&markers=size:mid%7Ccolor:0x008f00%7Clabel:Union Deck%7C35.3091708,-80.7352826" alt="Google Map of UNC-Charlotte"/>
+    </div>
+    
+    <!--BOTTOM NAVIGATION BAR-->
+    <!--<div id="nav">
+      <img src="info.png" height="45" width="45">
+    </div>-->
+    
+    <!--FAVORITES POPUP-->
+    <div class="popup" id="fav">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showFavs(); closeEditFavs()">
+        <h2>Favorites</h2>
+      </div>
+      <p class="favorite" id="westDeck" onclick="westDeck()">
+        <img src="minus.png" class="icon remove" id="remove1" onclick="removeItem1()">
+        West Deck
+      </p>
+      <p class="favorite" id="eastDeck">
+        <img src="minus.png" class="icon remove" id="remove2" onclick="removeItem2()">
+        East Deck
+      </p>
+      <p class="favorite" id="unionDeck">
+        <img src="minus.png" class="icon remove" id="remove3" onclick="removeItem3()">
+        Union Deck
+      </p>
+      <p class="favorite" id="newFav">
+        <!--<img src="minus.png" class="icon remove" id="remove4" onclick="removeItem4()">-->
+        
+      </p>
+      <button id="edit" value="edit" class="edit" onclick="editFavs(); showSave()">Edit</button>
+      <img src="plus.png" class="icon" id="add" onclick="showAddFav()">
+      <!--<button id="add" value="add" class="add" onclick="addFav()">Add</button>-->
+      <button id="save" type="submit" class="save" onclick="save()">Save</button>
+    </div>
+    
+    <!--ADD FAVORITE MENU-->
+    <div id="addFav" class="popup">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showAddFav()">
+        <h2>Add Favorite</h2>
+      </div>
+      <form>
+      <select>
+        <optgroup label="C & F/S">
+          <option value="East Deck 2">East Deck 2</option>
+          <option value="East Deck 3">East Deck 3</option>
+          <option value="Union Deck">Union Deck</option>
+          <option value="West Deck">West Deck</option>
+          <option value="CRI Deck 1">CRI Deck 1</option>
+          <option value="Lot 4A">Lot 4A</option>
+          <option value="Lot 5/5A">Lot 5/5A</option>
+          <option value="Lot 7">Lot 7</option>
+          <option value="Lot 7A">Lot 7A</option>
+          <option value="Lot 14">Lot 14</option>
+          <option value="Lot 18/19">Lot 18/19</option>
+          <option value="Lot 23">Lot 23</option>
+          <option value="Lot 26">Lot 26</option>
+          <option value="CRI 2">CRI 2</option>
+        </optgroup>
+      </select>
+      <button type="submit" onclick="addFav()">Submit</button>
+      </form>
+    </div>
+    
+    <!--MENU POPUP-->
+    <div class="popup" id="menu">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showMenu()";>
+        <h2>Menu</h2>
+      </div>
+      <p>Profile</p>
+      <p onclick="showMenu(); showFavs()">Favorites</p>
+      <p onclick="showMenu(); showRecents()">Recents</p>
+    </div>
+    
+    <!--CONFIRM PARKING POPUP-->
+    <div class="popup" id="confirm">
+      <div class="title">
+        <img src="x.png" class="x" onclick="toggleConfirm()";>
+        <h2>Confirm</h2>
+      </div>
+      <form>
+        <button onclick="showFavs();showFavs()">Back</button>
+      <p>
+        How full was the deck/lot?
+        <input type="range" step="20"/>
+      </p>
+      <p>
+        <button type="submit" onclick="dropFlag()">Submit</button>
+      </p>
+      </form>
+    </div>
+    <div id="flag"><img src="flag.png" height="50" width="50"></div>
+    
+    <!--RECENTS POPUP-->
+    <div class="popup" id="recents">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showRecents()";>
+        <h2>Recently Visited</h2>
+      </div>
+      <p class="recent">
+        <!--<img src="outline_star.png" class="fav">-->
+        East Deck
+      </p>
+      <p class="recent" onclick="showRecents(); westDeck()">
+        <!--<img src="outline_star.png" class="fav">-->
+        West Deck
+      </p>
+      <p class="recent">Cone Deck</p>
+      <p class="recent">Union Deck</p>
+      <!--<p class="recent">Lot 21</p>-->
+    </div>
+  </body>
+</html>

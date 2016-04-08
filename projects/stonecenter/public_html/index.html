@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Stone Center for Counseling and Leadership</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="jquery/css/custom-theme/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="popupCookie.js"></script>
+    <script type="text/javascript" src="gallery.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery-ui-1.10.4.custom.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+    
+        <h1>
+            The Stone Center for Counseling & Leadership    
+        </h1>
+    
+        <div class="nav">
+            <ul class="nav">
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="services.html">Professional Services</a></li>
+                <li><a href="therapists.html">Meet the Therapists</a></li>
+                <li><a href="billing.html">Billing & Insurance</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <h2></h2>
+        <div id="about">
+            <p>
+            <img src="media/building.jpg" alt="Stone Center Front">
+            <span class="emphasize">The Stone Center for Counseling & Leadership</span> is a private practice dedicated to providing professional counseling and consultation services to children, adolescents, adults, couples and families.</p>
+            <p>
+            Our skilled therapists bring many years of experience from a wide variety of specialty areas.
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Join Our Newsletter:</h3>
+            <form name="subscribe" onsubmit="return validateSubscription()">
+                <label for="name" id="nameLabel">Name</label>
+                    <input type="text" name="name" id="name"><br>
+                <label for="email" id="emailLabel">Email</label>
+                    <input type="email" name="email" id="email"><br>
+                <input type="submit" value="Subscribe">
+            </form>
+            
+            <div class="therapists">
+                <h3>Our Therapists</h3>
+                <ul>
+                    <li class="leslieLink"><a>Leslie Petruk</a></li>
+                    <li class="andreaLink"><a>Andrea Miller</a></li>
+                    <li class="katieLink"><a>Kathryn Burnett</a></li>
+                </ul>
+                <button type="button" class="learnMore">Learn More</button>
+            </div>
+        </div>
+        <div id="popUp">
+            <span>Welcome, please join our newsletter!</span>
+            <form name="popUp" id="popupForm" onsubmit="return validatePopupSubscription()">
+                <label for="name" id="pNameLabel">Name</label>
+                    <input type="text" name="name" id="pName"><br>
+                <label for="email" id="pEmailLabel">Email</label>
+                    <input type="email" name="email" id="pEmail">
+                <input type="submit" value="Subscribe" id="pSubscribe">
+            </form>
+            <div class="close">CLOSE</div>
+        </div>
+        <div id="unPopup"></div>
+        
+        
+    <p><span id="validate"><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></span></p> 
+    </div>
+    <div class="footer">
+        <span id="right">1106 Harding Place <br>Charlotte, NC 28203<br>P: 704.665.0065<br>F: 704.335.4001</span>
+    </div>
+</body>
+</html>

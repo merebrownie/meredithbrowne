@@ -1,0 +1,132 @@
+.services h2 {
+    margin-bottom: 0;
+    padding: 5px;
+}
+.services h3 {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*border-top: solid 1px white;*/
+    font-size: 20px;
+    width: 880px;
+    background: transparent;
+    color: black;
+    float: left;
+}
+
+.services h4 {
+    margin: 10px;
+}
+
+.links {
+    float: left;
+    padding: 1px;
+    width: 898px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    background-color: #CB6A87;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.links a {
+    display: block;
+    width: auto;
+    float: left;
+    background-color: #986272;
+    margin: 1px;
+    border: solid 5px #986272;
+    border-left: solid 30px #986272;
+    border-right: solid 30px #986272;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.links a:link, a:visited {
+    color: #FFFFFF;
+}
+
+.links a:hover {
+    background-color: #E5A9BB;
+    border-color: #E5A9BB;
+    color: #000000;
+}
+
+.links a:active {
+    background-color: #E593AC;
+    border-color: #E593AC;
+}
+
+.links #active {
+    background-color: #E593AC;
+    border-color: #E593AC;
+}
+
+#individualLink {
+    background-color: #E5A9BB;
+    border-color: #E5A9BB;
+    color: black;
+}
+
+#popUp.services {
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input.services {
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+}
+
+.popupLink {
+    cursor: pointer;
+    /*font-family: Georgia;*/
+    font-weight: bold;
+    /*font-size: 16px;*/
+    text-decoration: underline
+}
+
+.services p {
+    width: 850px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.services {
+    float: left;
+    /*background-image: url("media/background.png");*/
+}
+
+.imgRight {
+    float: right;
+}
+
+.imgLeft {
+    float: left;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: bold;
+    color: #1A6349;
+}
+
+#coaching li {
+    list-style-image: url("media/bullet.png");
+}
+
+#popUp h3 {
+    width: auto;
+}

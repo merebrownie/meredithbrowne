@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+        <header>
+            <h1>TripAdvisor Travelers' Choice Destinations 2015</h1>
+        </header>
+        
+        <section>
+            <table width="60%" id="location1" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#1 Marrakech, Morocco</th>
+                </tr>
+                <!--Picture: <img src="media/MARRAKECH_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        The new Travelers' Choice #1 Destination in the
+                        world, Marrakech is a magical place, brimming with markets,
+                        gardens, palaces, and mosques. Exploring the intimate
+                        courtyards and snaking alleyways of the historic Medina can
+                        easily eat up a day. Find inner peace at the serene Jardin
+                        Majorelle or take in the beauty of one of the city’s
+                        historic mosques (taking note that you may only step inside
+                        if you are Muslim). 
+                    </td>
+                    <td id="googleMap1" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location1)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location1)">Next</button></td>
+                </tr>  
+            </table>
+            <table width="60%" id="location2" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#2 Siem Reap, Cambodia</th>
+                </tr>
+                <!--Picture:<img src="media/SIEM_REAP_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        When the morning light washes over the overgrown
+                        temples and ruins of Angkor Wat, a simple Siem Reap sunrise
+                        becomes a profound event. The ancient structures are
+                        contained within one of the largest religious complexes in
+                        the world. The complex and the 12th century Angkor Thom
+                        royal city are considered the main reasons to visit Siem
+                        Reap, the #2 Travelers' Choice Destination in the world for
+                        2015. Get a lesson in national history at the Cambodian
+                        Cultural Village, and a lesson in bargaining at the Angkor
+                        Night Market, a bonanza of shopping stalls, food vendors,
+                        and bars. 
+                    </td>
+                    <td id="googleMap2" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location2)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location2)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location3" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#3 Istanbul, Turkey</th>
+                </tr>
+                <!--Picture: <img src="media/ISTANBUL_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        Europe and Asia meet in Istanbul, this year's #3
+                        Travelers' Choice Destination in the World, where
+                        breathtaking ancient architecture coexists with modern
+                        restaurants and nightlife. The city's mosques, bazaars, and
+                        hammams (Turkish baths) could keep you happily occupied for
+                        your entire trip. Start with the awe-inspiring Sultan Ahmet
+                        Camii (Blue Mosque), visible from many points of the city.
+                        Stroll the Galata Bridge and stop by the Miniaturk Park to
+                        see its tiny artifacts. The Grand Bazaar has thousands of
+                        shops to browse, while the Egyptian Bazaar is a fragrant
+                        trove of spices and fruits.
+                    </td>
+                    <td id="googleMap3" class="map"></td>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location3)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location3)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location4" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#4 Hanoi, Vietnam</th>
+                </tr>
+                <!--Picture: <img src="media/HANOI_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        Hanoi is #4 in the world in this year's
+                        Travelers' Choice Destinations Awards. The charming
+                        Vietnamese capital has aged well, preserving the Old
+                        Quarter, monuments and colonial architecture, while making
+                        room for modern developments alongside. Once called Thang
+                        Long, or "ascending dragon," this centuries-old city hasn't
+                        forgotten its past, as attested by sites such as Ho Chi
+                        Minh's Mausoleum and Hoa Lo Prison. Lakes, parks, shady
+                        boulevards, and more than 600 temples and pagodas add to
+                        the appeal of this city, which is easily explored by taxi.
+                    </td>
+                    <td id="googleMap4" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location4)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location4)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location5" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#5 Prague, Czech Republic</th>
+                </tr>
+                <!--Picture: <img src="media/PRAGUE_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        The bohemian allure and fairytale features of Prague, #5 in
+                        the World in this year's Travelers' Choice Destination
+                        Awards, make it a perfect destination for beach-weary
+                        vacationers who want to immerse themselves in culture.
+                        Spend a full day exploring Prazsky hrad (Prague Castle),
+                        then refuel over a hearty dinner at a classic Czech tavern.
+                        Spend some time wandering the Old Town Square before heading
+                        over to gape at The Old Town Hall and Astronomical Clock.
+                        Prague’s best bars are found in cellars, where historic pubs
+                        set the scene for a night of traditional tippling. 
+                    </td>
+                    <td id="googleMap5" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location5)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location5)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location6" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#6 London, United Kingdom</th>
+                </tr>
+                <!--Picture: <img src="media/LONDON_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        The crown jewels, Buckingham Palace, Camden Market…in 
+                        London, a perennial Travelers' Choice Award winner, history
+                        collides with art, fashion, food, and good British ale. A
+                        perfect day is different for everyone: culture aficionados
+                        shouldn't miss the Tate Modern and the Royal Opera House. If
+                        you love fashion, Oxford Street has shopping galore. For 
+                        foodies, cream tea at Harrod’s or crispy fish from a proper
+                        chippy offers classic London flavor. Music and book buffs 
+                        will love seeing Abbey Road and the Sherlock Holmes Museum 
+                        (at 221B Baker Street, of course). 
+                    </td>
+                    <td id="googleMap6" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location6)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location6)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location7" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#7 Rome, Italy</th>
+                </tr>
+                <!--Picture: <img src="media/ROME_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        The Travelers' Choice #7 Destination in the World for 2015,
+                        Rome wasn't built in a day--and you'll need much more than a
+                        day to take in this timeless city. The city is a real-life
+                        collage of piazzas, open-air markets, and astonishing
+                        historic sites. Toss a coin into the Trevi Fountain, 
+                        contemplate the Colosseum and the Pantheon, and sample a
+                        perfect espresso or gelato before spending an afternoon 
+                        shopping at the Campo de’Fiori or Via Veneto. Enjoy some of
+                        the most memorable meals of your life here, too, from fresh
+                        pasta to succulent fried artichokes or a tender oxtail stew. 
+                    </td>
+                    <td id="googleMap7" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location7)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location7)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location8" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#8 Buenos Aires, Argentina</th>
+                </tr>
+                <!--Picture: <img src="media/BUENES_AIRES_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        The birthplace of the tango is, like the dance itself,
+                        captivating, seductive and bustling with excited energy. 
+                        Atmospheric old neighborhoods are rife with romantic 
+                        restaurants and thumping nightlife, and Buenos Aires' 
+                        European heritage is evident in its architecture, boulevards 
+                        and parks. Cafe Tortoni, the city's oldest bar, will 
+                        transport you back to 1858, and the spectacular Teatro Colon
+                        impresses just as it did in 1908. The Travelers' Choice #8 
+                        Destination in the World this year, Latin America's shopping
+                        capital offers the promise of premium retail therapy along 
+                        its grand, wide boulevards."
+                    </td>
+                    <td id="googleMap8" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location8)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location8)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location9" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#9 Paris, France</th>
+                </tr>
+                <!--Picture: <img src="media/PARIS_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        Lingering over pain au chocolat in a sidewalk café, relaxing
+                        after a day of strolling along the Seine and marveling at
+                        icons like the Eiffel Tower and the Arc de Triomphe… the 
+                        perfect Paris experience combines leisure and liveliness 
+                        with enough time to savor both an exquisite meal and 
+                        exhibits at the Louvre. Get to know this romantic, rewarding
+                        Travelers' Choice Destination: awaken your spirit at Notre 
+                        Dame, bargain hunt at the Marché aux Puces de Montreuil or 
+                        for goodies at the Marché Biologique Raspail, then cap it 
+                        all off with a risqué show at the Moulin Rouge. 
+                    </td>
+                    <td id="googleMap9" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location9)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location9)">Next</button></td>
+                </tr>
+            </table>
+            <table width="60%" id="location10" class="location">
+                <tr>
+                    <th class="cityName" colspan="2">#10 Cape Town Central, South Africa</th>
+                </tr>
+                <!--Picture: <img src="media/CAPE_TOWN_CENTRAL_v2.jpg" alt=""/><br>-->
+                <tr>
+                    <td class="desc">
+                        Cape Town, #9 on the list of Travelers' Choice Destination
+                        World Winners, glistens at the southern tip of the African 
+                        continent. Picture-perfect views at Blaauwberg Beach and 
+                        Kirstenbosch National Botanical Gardens are within easy 
+                        driving distance of "The Mother City." The Cape of Good 
+                        Hope Nature Reserve provides sweeping sea vistas, hiking 
+                        trails and wildlife encounters. On a more somber note, 
+                        travelers can visit Robben Island, the prison where Nelson 
+                        Mandela was held for 27 years. 
+                    </td>
+                    <td id="googleMap10" class="map"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="prev" onclick="prev(location10)">Previous</button></td>
+                    <td><button type="button" id="next" onclick="next(location10)">Next</button></td>
+                </tr>
+            </table>    
+        </section>
+        
+        <footer>
+            <a href="http://www.tripadvisor.com/TravelersChoice-Destinations">TripAdvisor Travelers' Choice Destinations 2015</a>
+        </footer>
+        </div>
+    </body>    
+</html>

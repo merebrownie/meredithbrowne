@@ -1,0 +1,84 @@
+#therapists {
+    width: 900px;
+    font-size: 16px;
+    font-family: Georgia;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding-bottom: 50px;
+
+}
+
+/*therapist's headshots*/
+#therapists img {
+    width: 175px;
+    height: 159px;
+    float: left;
+    position: relative;
+}
+
+/*therapist bios*/
+.bios {
+    display: none;
+    width: 350px;
+    height: 318px;
+    position: relative;
+    font-size: 16px;
+}
+
+/*therapist's title*/
+.title {
+    font-weight: bold;
+}
+
+.title a:hover {
+    color: #842240;
+}
+
+.leslie {
+    visibility: visible;
+    margin: 10px;
+    width: 205px;
+    float: left;
+    position: relative;
+}
+
+#leslieBio {
+    display: none;
+}
+
+.andrea {
+    visibility: visible;
+    margin: 10px;
+    width: 205px;
+    float: left;
+    position: relative;
+}
+
+#andreaBio {
+    display: none;
+}
+
+.katie {
+    visibility: visible;
+    margin: 10px;
+    width: 205px;
+    float: left;
+    position: relative;
+}
+
+#katieBio {
+    display: none;
+}
+
+.elena {
+    visibility: visible;
+    margin: 10px;
+    width: 205px;
+    float: left;
+    position: relative;
+}
+
+#elenaBio {
+    display: none;
+}

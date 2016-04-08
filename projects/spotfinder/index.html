@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UNCC SpotFinder</title>
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script src="map.js"></script>
+  </head>
+  <body>
+  
+    <!--TOP NAVIGATION BAR-->
+    <div id="header">
+      <img src="outline_star.png" height="45" width="45" class="topL" onclick="toggleFavs()">
+      <span class="captionL">Favorites</span>
+      <h1>SpotFinder</h1>
+      <img src="menu.png" height="45" width="45" class="topR" onclick="showMenu()">
+      <span class="captionR">Menu</span>
+    </div>
+    
+    <!--GOOGLE MAP-->
+    <div id="map-canvas">
+      <!--<img id="map" src="http://maps.googleapis.com/maps/api/staticmap?center=35.3074531,-80.7353134&zoom=14&scale=2&size=414x736&&scale=2&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x929000%7Clabel:West Deck%7C35.304847,-80.7360622&markers=size:mid%7Ccolor:0x941100%7Clabel:East Deck%7C35.3053168,-80.726902&markers=size:mid%7Ccolor:0x008f00%7Clabel:Union Deck%7C35.3091708,-80.7352826" alt="Google Map of UNC-Charlotte"/>-->
+    </div>
+    
+    <!--BOTTOM NAVIGATION BAR-->
+    <!--<div id="nav">
+      <img src="info.png" height="45" width="45">
+    </div>-->
+    
+    <!--FAVORITES POPUP-->
+    <div class="popup" id="fav">
+      <div class="title">
+        <img src="x.png" class="x" onclick="hideFavs(); closeEditFavs()">
+        <h2>Favorites</h2>
+      </div>
+      <p class="favorite med" id="westDeck" onclick="westDeck()">
+        <img src="minus.png" class="icon remove" id="remove1">
+        West Deck
+      </p>
+      <p class="favorite full" id="eastDeck" onclick="eastDeck()">
+        <img src="minus.png" class="icon remove" id="remove2">
+        East Deck
+      </p>
+      <p class="favorite open" id="unionDeck" onclick="unionDeck()">
+        <img src="minus.png" class="icon remove" id="remove3">
+        Union Deck
+      </p>
+      <p class="favorite med" id="newFav">
+        <img src="minus.png" class="icon remove" id="remove4" onclick="removeItem4()"><span id="newFavName">New Fav</span>
+      </p>
+      <button id="edit" value="edit" class="edit" onclick="editFavs(); showSave()">Edit</button>
+      <img src="plus.png" class="icon" id="add" onclick="showAddFav()">
+      <!--<button id="add" value="add" class="add" onclick="addFav()">Add</button>-->
+      <button id="save" type="button" class="save" onclick="save(); hideSave(); hideAddFav()">Save</button>
+    </div>
+    
+    <!--ADD FAVORITE MENU-->
+    <div id="addFav" class="popup">
+      <div class="title">
+        <img src="x.png" class="x" onclick="hideAddFav()">
+        <h2>Add Favorite</h2>
+      </div>
+      <form id="addFav">
+        <p class="center">Choose a lot/deck:</p>
+        <select id="deck">
+          <optgroup label="C & F/S">
+            <option value="East Deck">East Deck</option>
+            <option value="Union Deck">Union Deck</option>
+            <option value="West Deck">West Deck</option>
+            <option value="CRI Deck 1">CRI Deck 1</option>
+            <option value="Lot 4A">Lot 4A</option>
+            <option value="Lot 5/5A">Lot 5/5A</option>
+            <option value="Lot 7">Lot 7</option>
+            <option selected="selected" value="Lot 7A">Lot 7A</option>
+            <option value="Lot 14">Lot 14</option>
+            <option value="Lot 18/19">Lot 18/19</option>
+            <option value="Lot 23">Lot 23</option>
+            <option value="Lot 26">Lot 26</option>
+            <option value="CRI 2">CRI 2</option>
+          </optgroup>
+        </select>
+        <button type="button" id="submitNewFav" onclick="addFav(); hideAddFav(); showEdit()">Submit</button>
+      </form>
+    </div>
+    
+    <!--MENU POPUP-->
+    <div class="popup" id="menu">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showMenu()";>
+        <h2>Menu</h2>
+      </div>
+      <p onclick="showMenu(); toggleProfile()">Profile</p>
+      <p onclick="showMenu(); showFavs()">Favorites</p>
+      <p onclick="showMenu(); showRecents()">Recents</p>
+    </div>
+    
+    <!--CONFIRM PARKING POPUP-->
+    <div class="popup" id="confirm">
+      <div class="title">
+        <img src="x.png" class="x" onclick="toggleConfirm()";>
+        <h2>Confirm</h2>
+      </div>
+      <form>
+        <button type="button" onclick="toggleConfirm(); showFavs()">Back</button>
+      <div>
+        <p class="center range" id="question">How full was the deck/lot?</p>
+        <span class="center range">Empty</span><input type="range" id="fullness" step="20"/><span class="center range">Full</span>
+      </div>
+      <p>
+        <button type="button" class="submit" onclick="toggleConfirm(); hideFavs(); dropFlag()">Submit</button>
+      </p>
+      </form>
+    </div>
+    <div id="flag"><img src="flag.png" height="50" width="50"></div>
+    
+    <!--RECENTS POPUP-->
+    <div class="popup" id="recents">
+      <div class="title">
+        <img src="x.png" class="x" onclick="showRecents()";>
+        <h2>Recently Visited</h2>
+      </div>
+      <p class="recent full" onclick="showRecents(); eastDeck()">
+        <!--<img src="outline_star.png" class="fav">-->
+        East Deck
+      </p>
+      <p class="recent med" onclick="showRecents(); westDeck()">
+        <!--<img src="outline_star.png" class="fav">-->
+        West Deck
+      </p>
+      <p class="recent full">Cone Deck</p>
+      <p class="recent open">Union Deck</p>
+      <!--<p class="recent">Lot 21</p>-->
+    </div>
+    
+    <!--PROFILE POPUP-->
+    <div class="popup" id="profile">
+      <div class="title">
+        <img src="x.png" class="x" onclick="toggleProfile()";>
+        <h2>Profile</h2>
+      </div>
+      <img class="logo" src="logo.png"/>
+      <p class="attr" id="username" onclick="setUsername()">Set Username</p>
+      <p class="attr" id="editFavs" onclick="toggleProfile(); showFavs(); editFavs()">Edit Favorites</p>
+    </div>
+  </body>
+</html>
