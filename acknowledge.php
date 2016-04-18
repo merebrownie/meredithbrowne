@@ -7,13 +7,13 @@
  */
 
 if (isset($_POST['contact_form'])) {
-    $to = 'merebrownie@meredith-browne.com';
+    $to = 'merebrownie@meredithbrowne';
     $subject = 'Web Portfolio Contact';
     $message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
     $message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
     $message .= 'Message: ' . $_POST['message'];
     
-    $headers = "From: webmaster@meredith-browne.com\r\n";
+    $headers = "From: merebrownie@meredithbrowne\r\n";
     $headers .= 'Content-Type: text/plain; charset=utf-8';
     $verifyTrusted = '-fmeredithbrowne@me.com';
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
