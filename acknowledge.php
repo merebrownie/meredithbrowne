@@ -20,7 +20,8 @@ if (isset($_POST['contact_form'])) {
     if ($email) {
         $headers .= "\r\nReply-To: $email";
     }
-    $success = mail($to, $subject, $message, $headers, '-fmeredithbrowne@me.com');
+//    $success = mail($to, $subject, $message, $headers, '-fmeredithbrowne@me.com');
+    $success = mail($to, $subject, $message);
 }
 
 ?>
