@@ -6,7 +6,8 @@
     </head>
     <body>
         <h2>Contact</h2>
-        <form action="index.php#contact" method="post" id="add_contact_form" name="contact-form">
+        <!--<form action="index.php#contact" method="post" id="add_contact_form" name="contact-form">-->
+        <form action="acknowledge.php" method="post" id="add_contact_form" name="contact-form">
             <input type="hidden" name="action" value="add_contact">
             <input type="text" name="name" placeholder="Name" id="contact_name" required="">
             <input type="email" name="email" placeholder="Email" id="contact_email" required=""><br>
