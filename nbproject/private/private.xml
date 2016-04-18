@@ -3,15 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/view/header.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/model/database.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/index.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/model/contact_db.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/contact_manager/index.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/contact_manager/add_contact.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/css/main.css</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/view/footer.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/meredithbrowne/js/main.js</file>
+            <file>file:/Applications/XAMPP/htdocs/meredithbrowne/acknowledge.php</file>
+            <file>file:/Applications/XAMPP/htdocs/meredithbrowne/contact_manager/add_contact.php</file>
+            <file>file:/Applications/XAMPP/htdocs/meredithbrowne/index.php</file>
         </group>
     </open-files>
 </project-private>

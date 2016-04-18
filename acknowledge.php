@@ -7,7 +7,7 @@
  */
 
 if (isset($_POST['contact_form'])) {
-    $to = 'meredithbrowne@me.com';
+    $to = 'merebrownie@meredith-browne.com';
     $subject = 'Web Portfolio Contact';
     $message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
     $message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
