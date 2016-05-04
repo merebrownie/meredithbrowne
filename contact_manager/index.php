@@ -6,27 +6,65 @@
  * and open the template in the editor.
  */
 
-require('/model/database.php');
-require '/model/contact_db.php';
+require('../model/database.php');
+require '../model/contact_db.php';
+
+global $success;
+global $error_message;
+$error_message = "wtf";
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
-    $action = filter_input(INPUT_GET, 'action');
+    //$action = filter_input(INPUT_GET, 'action');
+    $action = 'add_contact';
+    $error_message .= "null action";
 }
 
 if ($action == 'add_contact') {
-    $contact_id = filter_input(INPUT_POST, 'contact_id', FILTER_VALIDATE_INT);
-    $contact_name = filter_input(INPUT_POST, 'contact_name', FILTER_SANITIZE_STRING);
-    $contact_email = filter_input(INPUT_POST, 'contact_email', FILTER_VALIDATE_EMAIL);
-    $contact_message = filter_input(INPUT_POST, 'contact_message', FILTER_SANITIZE_STRING);
-    if ($contact_id == NULL || $contact_id == FALSE || $contact_name == NULL || $contact_name == FALSE 
-            || $contact_email == NULL || $contact_email == FALSE || $contact_message == NULL 
-            || $contact_message == FALSE) {
-        $error_message = "You missed something, please complete all fields.";
-        
+    $contact_name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $contact_email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $contact_message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    
+    if (filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING) == null) {
+        if (!filter_has_var(INPUT_POST, "contact_name")) {
+            $error_message .= " invalid name: " . $contact_name;    
+        }
+    }
+    if (filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL) == null) {
+        if (!filter_has_var(INPUT_POST, "contact_name")) {
+            $error_message .= " invalid email: " . $contact_email;
+        }
+    }
+    if (filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING) == null) {
+        if (!filter_has_var(INPUT_POST, "contact_name")) {
+            $error_message .= " invalid message: " . $contact_message;
+        }
+    }
+    if ($contact_name == NULL || $contact_name == FALSE  || $contact_email == NULL || $contact_email == FALSE
+        || $contact_message == NULL || $contact_message == FALSE) {
+        $error_message .= "You missed something, please complete all fields.";
+        $error_message .= $contact_name . $contact_email . $contact_message;
+        include('../index.php');
+        include('/errors/error.php');
     } else {
-        add_contact($contact_id, $contact_name, $contact_email, $contact_message);
+        add_contact($contact_name, $contact_email, $contact_message);
+        $success = true;
+        //$error_message .= "???";
+        include('../index.php');
     }
 }
 
 ?>
+
+<html>
+    <body id="error">
+        <?php if ($success) { ?>
+            <h1>Thank you</h1>
+            <p>Your message has been sent.</p>
+        <?php } else { ?>
+            <h1>Oops!</h1>
+            <p>Sorry, there was a problem sending your message.</p>
+            <?php include('errors/error.php'); ?>
+        <?php } ?>
+    </body>
+</html>

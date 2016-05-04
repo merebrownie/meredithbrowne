@@ -7,12 +7,13 @@
     <body>
         <h2>Contact</h2>
         <!--<form action="index.php#contact" method="post" id="add_contact_form" name="contact-form">-->
-        <form action="acknowledge.php" method="post" id="add_contact_form" name="contact-form">
+        <form action="/contact_manager/index.php" method="post" id="add_contact_form">
             <input type="hidden" name="action" value="add_contact">
-            <input type="text" name="name" placeholder="Name" id="contact_name" required="">
-            <input type="email" name="email" placeholder="Email" id="contact_email" required=""><br>
-            <textarea name="message" placeholder="Message" id="contact_message" required="" rows="5"></textarea><br>
-            <button type="submit" name="send" value="send" class="right btn btn-default" onclick="newContact()">Send</button>
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="email" name="email" placeholder="Email"><br>
+            <textarea name="message" placeholder="Message"></textarea><br>
+            <input type="submit" value="send" class="btn btn-default">
+            <!--<input type="submit" name="send" value="send" class="right btn btn-default" onclick="newContact()">-->
         </form>
     </body>
 </html>

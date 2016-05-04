@@ -179,8 +179,10 @@ section {
 
 
 #mere-pic {
-    height: 250px;
-    width: 250px;
+    /*height: 250px;*/
+    /*width: 250px;*/
+    height: 30%;
+    width: 30%;
 }
 
 
@@ -190,6 +192,10 @@ section {
 
 #contact_name, #contact_email {
     width: 98%;
+}
+
+#error {
+    background: #eee;
 }
 
 /* contact form */

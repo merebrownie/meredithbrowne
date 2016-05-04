@@ -10,11 +10,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
+        <link href="../momm/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../momm/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../momm/css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
+        <link href="../momm/css/main.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Meredith Browne</title>
+        <title>Meredith Browne | Web Development Portfolio</title>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -45,10 +46,10 @@
             </div>
         </nav>
         
-        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="bootstrap/js/npm.js" type="text/javascript"></script>
         <script src="js/jquery-2.2.0.min-2.js" type="text/javascript"></script>
         <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/npm.js" type="text/javascript"></script>
         <script src="js/scrolling-nav.js" type="text/javascript"></script>
     </body>
 </html>
