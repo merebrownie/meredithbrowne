@@ -18,7 +18,6 @@
                         <li class="facebook"><a href="https://www.facebook.com/meredithlbrowne"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
                         <li class="linkedin"><a href="https://www.linkedin.com/in/meredithlbrowne"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                         <li class="github"><a href="https://github.com/merebrownie"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-                        <li class="pinterest"><a href="https://www.pinterest.com/merebrownie/"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>

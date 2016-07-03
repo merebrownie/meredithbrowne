@@ -18,7 +18,9 @@
                             <img src="img/harding.jpg">
                         </a>
                         <h4>Description</h4>
+                        <span>*Under Development*</span><br>
                         <span>PHP Web Application</span><br>
+                        <span>Bootstrap Framework</span>
                     </div>
                     
                     <div class="project-table col-md-4 col-sm-4">
