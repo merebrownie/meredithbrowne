@@ -254,19 +254,11 @@ div {
     float: none;
 }
 
-#button #showAll {
-    /*clear: both;
-    background-color: #CB6A87;
-    border: 5px solid #CB6A87;
-    color: #FFFFFF;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;*/
-    
+#learnMore {
     float: none;
     display: block;
     margin: 20px auto;
-    width: 100px;
+    width: 120px;
     background-color: #842240;
     color: white;
     font-family: Georgia, serif;

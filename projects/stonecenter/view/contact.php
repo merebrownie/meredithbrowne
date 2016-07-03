@@ -4,22 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>The Stone Center for Counseling & Leadership</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="script.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
     <div id="wrap">
-        <h1>The Stone Center for Counseling & Leadership</h1>
-         <div class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Professional Services</a></li>
-                <li><a href="therapists.html">Meet the Therapists</a></li>
-                <li><a href="billing.html">Billing & Insurance</a></li>
-                <li><a href="contact.html" id="active">Contact Us</a></li>
-            </ul>
-        </div>
+        <?php include '../view/header.php'; ?>
          <div id="contact">
          <div class="right">
             <h3>Location</h3>
@@ -38,7 +29,7 @@
                     <input type="email" id="emailAddress" name="email" class="text"><br>
                 <label for="phone">phone</label>
                     <input type="tel" id="phone" name="phone" class="text"><br>
-                <input type="submit" value="submit">
+                <input type="submit" value="Submit">
             </form>
             <p class="disclosure">
             Please do not leave urgent messages on this website. <br>The request appointment feature is for non-urgent matters. IF YOU ARE EXPERIENCING A LIFE THREATENING EMERGENCY, PLEASE CALL 911 OR GO TO THE NEAREST EMERGENCY ROOM.
@@ -100,7 +91,7 @@
                     </select>
                 <label for="referral">How were you referred to us?</label>
                     <textarea class="text" id="referral" name="referral"></textarea>
-                <input type="submit" value="submit">
+                <input type="submit" value="Submit">
             </form>
                      <span id="validate"><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></span>
@@ -109,8 +100,6 @@
          </div>
          
     </div>
-    <div class="footer">
-        <span id="right">1106 Harding Place <br>Charlotte, NC 28203<br>P: 704.665.0065<br>F: 704.335.4001</span>    
-    </div>
+    <?php include '../view/footer.php'; ?>
 </body>
 </html>

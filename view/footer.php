@@ -1,9 +1,7 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * by meredith browne
  */
 
 ?>
@@ -16,8 +14,11 @@
         <title>Meredith Browne</title>
     </head>
     <body onload="getYear()">
-        <nav class="navbar navbar-default footer">
-            Copyright &copy; <span id="currentYear"></span> Meredith Browne
+        <nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
+            <div class="container-fluid">
+                <p>Copyright &copy; <span id="currentYear"></span> Meredith Browne</p>
+            </div>
+            
         </nav>
     </body>
 </html>

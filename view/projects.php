@@ -1,3 +1,11 @@
+<?php
+
+/* 
+ * by meredith browne
+ */
+
+?>
+
 <section id="projects" class="projects-section">
     <div class="container">
         <div class="row">
@@ -5,9 +13,18 @@
                 <h2>Projects</h2>
                 <div class="row">
                     <div class="project-table col-md-4 col-sm-4">
-                        <a href="/momm/">
-                            <h3>M.O.M.M.</h3>
-                            <img src="img/momm.jpeg">
+                        <a href="/hardingdesignco/" target="_blank">
+                            <h3>Harding Design Co.</h3>
+                            <img src="img/harding.jpg">
+                        </a>
+                        <h4>Description</h4>
+                        <span>PHP Web Application</span><br>
+                    </div>
+                    
+                    <div class="project-table col-md-4 col-sm-4">
+                        <a href="/momm/" target="_blank">
+                            <h3>Master of My Music</h3>
+                            <img src="img/momm-min.jpeg">
                         </a>
                         <h4>Description</h4>
                         <span>Created for ITIS3105</span><br>
@@ -17,7 +34,7 @@
                     </div>
                     
                     <div class=" project-table col-md-4 col-sm-4">
-                        <a href="projects/stonecenter/">
+                        <a href="projects/stonecenter/" target="_blank">
                             <h3>Stone Center</h3>
                             <img src="img/stone-center.jpg">
                         </a>
@@ -27,8 +44,11 @@
                         <span>HTML, CSS, & JavaScript</span><br>
                         <span>&nbsp;</span>
                     </div>
+                    
+                </div>
+                <div class="row">
                     <div class="project-table col-md-4 col-sm-4">
-                        <a href="projects/spotfinder/">
+                        <a href="projects/spotfinder/" target="_blank">
                             <h3>SpotFinder</h3>
                             <img src="img/spot-finder.jpg">
                         </a>
@@ -40,10 +60,9 @@
                         <span>Google Maps API</span>
                         <br>
                     </div>
-                </div>
-                <div class="row">
+                    
                     <div class="project-table col-md-4 col-sm-4">
-                        <a href="projects/axure_prototype/">
+                        <a href="projects/axure_prototype/" target="_blank">
                             <h3>Fraction Concentration</h3>
                             <img src="img/fraction-concentration.jpeg">
                         </a>
@@ -53,15 +72,15 @@
                         <span>High Fidelity Axure Prototype</span><br>
                         <br>
                     </div>
-                    <div class="project-table col-md-4 col-sm-4">
-                        <a href="meredith-browne.com:8080/MyTwitter/">
+<!--                    <div class="project-table col-md-4 col-sm-4">
+                        <a href="http://meredith-browne.com:8080/MyTwitter/" target="_blank">
                             <h3>MyTwitter</h3>
                             <img src="img/mytwitter.jpeg">
                         </a>
                         <h4>Description</h4>
                         <span>Created for ITIS4166</span><br>
                         <span>Java/JSP Web Application</span>
-                    </div>
+                    </div>-->
                     <div class="project-table col-md-4 col-sm-4">
                         <a href="projects/worldcities/">
                             <h3>World Cities</h3>

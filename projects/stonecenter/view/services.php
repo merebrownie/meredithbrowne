@@ -4,31 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>The Stone Center for Counseling & Leadership</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="services.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="contactPopup.js"></script>
-    <script type="text/javascript" src="services.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/services.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/contactPopup.js"></script>
+    <script type="text/javascript" src="../js/services.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
     <div id="wrap">
     
-        <h1>
-            The Stone Center for Counseling & Leadership    
-        </h1>
-    
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" id="active">Professional Services</a></li>
-                <li><a href="therapists.html">Meet the Therapists</a></li>
-                <li><a href="billing.html">Billing & Insurance</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div>
+        <?php include '../view/header.php'; ?>
         
         <div class="services">
             <h2>Professional Services</h2>
@@ -45,7 +33,7 @@
             <div id="individual" class="tab">
                 <h3 id="individualTitle">Individual Therapy</h3>
                 <p>
-                <img class="imgLeft" src="media/individual-therapy.jpg" alt="Individual Therapy Photo">
+                    <img class="imgLeft" src="../media/individual-therapy.jpg" alt="Individual Therapy Photo">
                 Individual counseling is a cooperative and respectful process between therapist and client to facilitate change.
                 As a client, you will be provided a safe, confidential, and supportive environment to pursue the work and change for
                 which you seek. Engaging in counseling during challenging times takes courage and commitment. The benefits of counseling
@@ -60,7 +48,7 @@
             <div id="couples" class="tab">
                 <h3 id="couplesTitle">Couples Counseling</h3>
                 <p>
-                <img src="media/couple.jpg" alt="Happy Couple Photo" class="imgRight" style="height: 270px">
+                    <img src="../media/couple.jpg" alt="Happy Couple Photo" class="imgRight" style="height: 270px">
                 Couples counseling is intended to offer hope and nourishment to any relationship in distress. The safety and intentionality
                 that comes with couples counseling is often what is needed to reconnect you with your significant other and foster healthy
                 forms of communication. Couples therapy can also be used in more proactive ways to improve a relationship. Nothing better
@@ -78,7 +66,7 @@
             <div id="teen" class="tab">
                 <h3 id="teenTitle">Teen Counseling</h3>
                 <p>
-                <img src="media/teens.jpg" alt="Teens Photo" class="imgRight">
+                    <img src="../media/teens.jpg" alt="Teens Photo" class="imgRight">
                 Adolescents today face many issues and challenges that can lead to feeling overwhelmed and confused. These years can be a time of great vulnerability for a teen which may lead to poor choices and problematic behavior.  The adolescent years are riddled with transitional issues - physical and emotional changes along with the desire to establish independence from their parents, which can result in feelings of confusion and discouragement.  Teens often don't have the needed coping skills to deal with this significant distress which may lead to your teen engaging in risky behaviors or becoming depressed and/or anxious.  
                 </p>
                 <p>
@@ -94,21 +82,21 @@
                 <h3 id="playTitle">Child/Play Therapy</h3>
                 <h4>Why Play Therapy and Who Can Benefit?</h4>
                 <p>
-                <img src="media/playroom2.jpg" alt="Playroom" class="imgRight">
+                    <img src="../media/playroom2.jpg" alt="Playroom" class="imgRight">
                 Most children go through difficult times, such as divorce of their parents, trouble making friends, or adjusting to changes at school or home. Some children need more help than others to get through these times. Play therapy is the most appropriate treatment for helping children work through difficult times and helping parents gain a better understanding of what their child is going through.
                 </p>
                 <p>
-                <img src="media/playroom3.jpg" alt="Playroom" class="imgLeft">
+                    <img src="../media/playroom3.jpg" alt="Playroom" class="imgLeft">
                 Children ages 3-10 benefit most from play therapy versus traditional "talk therapy" as they can more effectively process through difficult situations and difficult emotions through play. What counseling and psychotherapy aim to do for adults, play therapy aims to do for children. Through play therapy, children learn to communicate with others, express feelings, modify behavior, develop problem-solving skills, and learn a variety of ways of relating to others. Play provides a safe psychological distance from their problems and allows expression of thoughts and feelings appropriate to their development.
                 </p>
                 <p>
-                <img src="media/playroom4.jpg" alt="Playroom" class="imgRight">
+                    <img src="../media/playroom4.jpg" alt="Playroom" class="imgRight">
                 Play therapy allows trained mental health practitioners who specialize in play therapy, to assess and understand children's play. Further, play therapy is utilized to help children cope with difficult emotions and find solutions to problems. 
 
                 </p>
                 <h4>Who Does Play Therapy?</h4>
                 <p>
-                <img src="media/apt.jpg" alt="Association for Play Therapy logo" class="imgLeft" style="width: 15%">
+                    <img src="../media/apt.jpg" alt="Association for Play Therapy logo" class="imgLeft" style="width: 15%">
                 The practice of play therapy requires extensive specialized education, training, and experience. A play therapist is a licensed (or certified) mental health professional who has earned a Master's or Doctorate degree in a mental health field with considerable general clinical experience and supervision.
 
                 With advanced, specialized training, experience, and supervision, mental health professionals may also earn the Registered Play Therapist (RPT) or Registered Play Therapist-Supervisor (RPT-S) credentials. The Stone Center for Counseling & Leadership has several experienced play therapists on staff who specialize in play therapy and child-related issues.
@@ -120,11 +108,11 @@
             <div id="family" class="tab">
                 <h3 id="familyTitle">Family Counseling</h3>
                 <p>
-                <img src="media/family.jpg" alt="Happy Family Photo" class="imgRight" style="width: 30%">
+                <img src="../media/family.jpg" alt="Happy Family Photo" class="imgRight" style="width: 30%">
                 Families often need and seek support to make it through the challenges everyday life. Family counseling can
 
                 help families improve communication and resolve conflict. Intended to improve connections among family members, family counseling impacts families to grow and change both individual members and the family as a whole.
-                <img src="media/family2.jpg" alt="Happy Family Photo" class="imgLeft" style="width: 40%">
+                <img src="../media/family2.jpg" alt="Happy Family Photo" class="imgLeft" style="width: 40%">
                 The health of the family also plays a large role when working with divorced and blended families. Strengthening the family relationships, co-parenting abilities, and decreasing family conflict allow children to thrive.
                 </p>
 
@@ -138,7 +126,7 @@
 
             <div id="coaching" class="tab">
                 <h3 id="coachingTitle">Parent Coaching</h3>
-                <img src="media/kidplaying.jpg" alt="Father and Son Playing" class="imgRight">
+                <img src="../media/kidplaying.jpg" alt="Father and Son Playing" class="imgRight">
                 <ul class="quote">
                 <li>Do you feel discouraged as a parent?</li>
                 <li>Are you struggling with finding ways to connect with your child?</li>
@@ -147,7 +135,7 @@
                 <li>Do you and your spouse need help getting on the same page?</li>
                 </ul>
                 <h4>Parent Coaching Can Help!</h4>
-                <img src="media/kidbicycle.jpg" alt="Mom and Son Biking" class="imgLeft">
+                <img src="../media/kidbicycle.jpg" alt="Mom and Son Biking" class="imgLeft">
                 <p>Learn basic communication techniques that will improve your relationship with your child(ren). Understand and gain techniques that are effective for the developmental stage of your child and the particular challenge or behavioral problem(s) you are encountering.
 
                 Gain confidence in your parenting skills, help build your child's self-esteem, learn how to understand your child's language and gain better insight into their behavioral challenges.
@@ -178,8 +166,6 @@
         </div>
         <div id="unPopup"></div>
     </div>
-    <div class="footer">
-        <span id="right">1106 Harding Place <br>Charlotte, NC 28203<br>P: 704.665.0065<br>F: 704.335.4001</span>
-    </div>
+    <?php include '../view/footer.php'; ?>
 </body>
 </html>

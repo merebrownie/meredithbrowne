@@ -1,19 +1,17 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * by meredith browne
  */
 
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../momm/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-        <link href="../momm/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="../momm/css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
-        <link href="../momm/css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Meredith Browne | Web Development Portfolio</title>
     </head>
@@ -38,18 +36,18 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#projects">Projects</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li class="active"><a href="/index.php#">Home</a></li>
+                    <li><a class="page-scroll" href="/index.php#about">About</a></li>
+                    <li><a class="page-scroll" href="/index.php#projects">Projects</a></li>
+                    <li><a class="page-scroll" href="/index.php#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         
-        <script src="js/jquery-2.2.0.min-2.js" type="text/javascript"></script>
-        <script src="js/jquery.easing.min.js" type="text/javascript"></script>
-        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="bootstrap/js/npm.js" type="text/javascript"></script>
-        <script src="js/scrolling-nav.js" type="text/javascript"></script>
+        <script src="../js/jquery-2.2.0.min-2.js" type="text/javascript"></script>
+        <script src="../js/jquery.easing.min.js" type="text/javascript"></script>
+        <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../bootstrap/js/npm.js" type="text/javascript"></script>
+        <script src="../js/scrolling-nav.js" type="text/javascript"></script>
     </body>
 </html>

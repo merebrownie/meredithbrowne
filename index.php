@@ -1,9 +1,13 @@
+<?php
+
+/* 
+ * by meredith browne
+ */
+
+?>
+
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,6 +17,7 @@ and open the template in the editor.
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
         <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Meredith Browne | Web Development Portfolio</title>
@@ -35,7 +40,9 @@ and open the template in the editor.
         <?php include 'view/contact.php'; ?>
         
         <footer class="row">
-            <?php include 'view/footer.php'; ?>
+            <div class="footer">
+                <?php include 'view/footer.php'; ?>
+            </div>
         </footer>
         
         <!-- JavaScript -->

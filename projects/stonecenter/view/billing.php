@@ -4,32 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>The Stone Center for Counseling & Leadership</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="services.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="gallery.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/services.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
 </head>
 
 <body>
     <div id="wrap">
     
-        <h1>
-            The Stone Center for Counseling & Leadership    
-        </h1>
-    
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Professional Services</a></li>
-                <li><a href="therapists.html">Meet the Therapists</a></li>
-                <li><a href="billing.html" id="active">Billing & Insurance</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div>
+        <?php include '../view/header.php'; ?>
         <h2>Billing & Insurance</h2>
         <div id="billing">
             The Stone Center For Counseling & Leadership currently participates with the following insurance companies:
-            <img src="media/filldoc.jpg" alt="Forms" class="imgRight">
+            <img src="../media/filldoc.jpg" alt="Forms" class="imgRight">
             <ul>
                 <li>Blue Cross/Blue Shield</li>
                 <li>PPO Policies From Other Insurance Carriers</li>
@@ -47,8 +35,6 @@
 
         </div>
     </div>
-    <div class="footer">
-        <span id="right">1106 Harding Place <br>Charlotte, NC 28203<br>P: 704.665.0065<br>F: 704.335.4001</span> 
-    </div>
+    <?php include '../view/footer.php'; ?>
 </body>
 </html>

@@ -1,5 +1,10 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=portfolio_contacts';
+
+/* 
+ * by meredith browne
+ */
+
+    $dsn = 'mysql:host=localhost;dbname=stone_center';
 //    $username = 'merebrownie';
 //    $password = 'brow4780';
     //$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
@@ -15,9 +20,9 @@
         exit;
     }
     
-    function display_db_error ($error_message) {
-        global $app_path;
-        include 'errors/db_error.php';
-        exit;
-    }
+//    function display_db_error ($error_message) {
+//        global $app_path;
+//        include '../errors/db_error.php';
+//        exit;
+//    }
 ?>

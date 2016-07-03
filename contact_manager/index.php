@@ -1,9 +1,7 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * by meredith browne
  */
 
 require('../model/database.php');
@@ -11,13 +9,11 @@ require '../model/contact_db.php';
 
 global $success;
 global $error_message;
-$error_message = "wtf";
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     //$action = filter_input(INPUT_GET, 'action');
     $action = 'add_contact';
-    $error_message .= "null action";
 }
 
 if ($action == 'add_contact') {
@@ -27,44 +23,28 @@ if ($action == 'add_contact') {
     
     if (filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING) == null) {
         if (!filter_has_var(INPUT_POST, "contact_name")) {
-            $error_message .= " invalid name: " . $contact_name;    
+            $error_message .= " Name required.<br>";    
         }
     }
     if (filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL) == null) {
         if (!filter_has_var(INPUT_POST, "contact_name")) {
-            $error_message .= " invalid email: " . $contact_email;
+            $error_message .= " Invalid email address.<br>";
         }
     }
     if (filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING) == null) {
         if (!filter_has_var(INPUT_POST, "contact_name")) {
-            $error_message .= " invalid message: " . $contact_message;
+            $error_message .= " Message required.<br>";
         }
     }
     if ($contact_name == NULL || $contact_name == FALSE  || $contact_email == NULL || $contact_email == FALSE
         || $contact_message == NULL || $contact_message == FALSE) {
         $error_message .= "You missed something, please complete all fields.";
-        $error_message .= $contact_name . $contact_email . $contact_message;
-        include('../index.php');
-        include('/errors/error.php');
+        include('../errors/error.php');
     } else {
         add_contact($contact_name, $contact_email, $contact_message);
         $success = true;
-        //$error_message .= "???";
-        include('../index.php');
+        include 'thanks.php';
     }
 }
 
 ?>
-
-<html>
-    <body id="error">
-        <?php if ($success) { ?>
-            <h1>Thank you</h1>
-            <p>Your message has been sent.</p>
-        <?php } else { ?>
-            <h1>Oops!</h1>
-            <p>Sorry, there was a problem sending your message.</p>
-            <?php include('errors/error.php'); ?>
-        <?php } ?>
-    </body>
-</html>

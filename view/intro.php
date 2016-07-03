@@ -1,3 +1,8 @@
+<?php
+/* 
+ * by meredith browne
+ */
+?>
 <section id="home" class="home-section">
     <div class="container">
         <div class="row">

@@ -1,15 +1,19 @@
+<?php
+
+/* 
+ * by meredith browne
+ */
+
+?>
+
 <header class="row">
     <?php include '../view/header.php'; ?>
 </header>
-<div id="error">
+<div id="error" class="container result">
     <h1>Error</h1>
-    <p><?php echo $error_message; ?></p>
-</div>
-<?php include '../view/home.php'; ?>
-<?php include '../view/about.php'; ?>
-<?php include '../view/projects.php'; ?>
-<?php include '../view/contact.php'; ?>
+    <p><?php echo $error_message; ?></p>   
+</div>>
 
-<footer class="row">
+<footer class="navbar-fixed-bottom">
     <?php include '../view/footer.php'; ?>
 </footer>
