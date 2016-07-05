@@ -11,8 +11,12 @@
         <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
-        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<link href="../css/main.css" rel="stylesheet" type="text/css"/>-->
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>Meredith Browne | Web Development Portfolio</title>
     </head>
     <body>

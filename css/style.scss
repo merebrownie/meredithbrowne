@@ -1,0 +1,261 @@
+/*
+ by meredith browne
+*/
+/* 
+    Created on : Jul 5, 2016, 12:41:22 AM
+    Author     : meredithbrowne
+*/
+
+@font-face {
+    font-family: Gardenia;
+    src: url('/fonts/gardenia.ttf');
+}
+
+@font-face {
+    font-family: Bromello;
+    src: url('/fonts/bromello.ttf');
+}
+
+@font-face {
+    font-family: Cabana;
+    src: url('/fonts/Cabana-Regular.otf');
+}
+
+$footerHeight: 60px;
+$bodyFont: "Century Gothic", Verdana, sans-serif;
+$titleFont: Bromello;
+$altFont: Cabana;
+$socialTransform: scale(1.3,1.3) rotate(45deg);
+$backgroundColor: #eee;
+$altBackgroundColor: #f0eaef;
+
+body {
+    margin-bottom: $footerHeight;
+    padding-top: 100px;
+    min-height: 100%;
+    background-image: url('../img/grey-floral.png');
+    font-family: $bodyFont;
+}
+
+button {
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    nav {
+        font-family: $bodyFont;
+        font-size: 14px;
+        border-left: 10px;
+    }
+}
+
+h1 {
+    font-family: $titleFont;
+}
+
+h2 {
+    font-family: $titleFont;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: $altFont;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 12px 24px;
+    margin: 0 28px 10px 0;
+    border: none;
+    background: rgba(0,0,0,.05);
+    border-radius: 5px;
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 4px #000;
+    }
+}
+
+nav {
+    font-family: $altFont;
+    font-size: 36px;
+}
+
+section {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    min-height: 100%;
+    .about-section,
+    .contact-section {
+        min-height: 100%;
+        text-align: center;
+        background: #eee;
+    }
+    .home-section {
+        min-height: 100%;
+        text-align: center;
+        background: #fff;
+        h1 {
+            font-family: $titleFont;
+            font-size: 64px;
+        }
+        h2 {
+            font-family: $altFont;
+            font-size: 48px;
+        }
+    }
+    .projects-section {
+        min-height: 100%;
+        text-align: center;
+        background: #fff;
+        .project-table {
+            text-align: center;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footerHeight;
+    margin-bottom: 0px;
+}
+
+.initials {
+    font-family: $titleFont;
+    font-size: 36px;
+}
+
+.result {
+    min-height: 80%;
+    background: #f0eaef;
+    width: 97%;
+}
+
+.right {
+    float: right;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+.social {
+    position: relative;
+    height: 3em;
+    width: 13.5em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    li {
+        display: block;
+        height: 4em;
+        line-height: 4em;
+        margin: -2.2em;
+        position: absolute;
+        -webkit-transition: -webkit-transform .7s;
+        -moz-transiton: -moz-transform .7s;
+        -ms-transition: -ms-transform .7s;
+        -o-transition: -o-transform .7s;
+        transition: transform .7s;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        text-align: center;
+        width: 4em;
+        &:hover {
+            -webkit-transform: $socialTransform;
+            -moz-transform: $socialTransform;
+            -ms-transform: $socialTransform;
+            -o-transform: $socialTransform;
+            transform: $socialTransform;
+        }
+    }
+    a {
+        color: #fffdf0;
+        display: block;
+        height: 4em;
+        line-height: 6em;
+        text-align: center;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: 4em;
+    }
+    .fa-3x {
+        font-size: 3em;
+        vertical-align: text-bottom;
+    }
+
+    .facebook {
+        background: #155b9d;
+        left: 25%;
+        top: 0%;
+    }
+
+    .github {
+        background: #3f7aa3;
+        bottom: 0;
+        left: 50%
+    }
+
+    .linkedin {
+        background: #1a0ec4;
+        top: 0;
+        left: 75%;
+    }
+}
+
+#contact_message,
+#contact_name,
+#contact_email {
+    width: 98%
+}
+
+#error {
+    background: $altBackgroundColor;
+}
+
+#footer {
+    height: $footerHeight;
+}
+
+#home,
+#projects {
+    background-color: $altBackgroundColor;
+}
+
+#mere-pic {
+    height: 50%;
+    width: 50%;
+}
+
+@media screen and (max-width: 47.9em) {
+    #mere-pic {
+        height: 90%;
+        width: 90%;
+    }
+}
