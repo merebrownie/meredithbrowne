@@ -35,14 +35,15 @@
                 <h3>Skills</h3>
                 <span>HTML</span><br>
                 <span>CSS</span><br>
+                <span>PHP</span><br>
                 <span>JavaScript</span><br>
                 <span>MySQL</span><br>
+                <span>SCSS</span><br>
                 <span>Java</span><br>
-                <span>PHP</span><br>
+                <span>MVC Pattern</span><br>
                 <span>GitHub Version Control</span><br>
                 <span>Bootstrap Framework</span><br>
                 <span>Android Application Development</span><br>
-                <span>Prototyping using Axure RP and Balsamiq</span>
             </div>
         </div>
     </div>  
