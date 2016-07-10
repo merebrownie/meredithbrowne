@@ -17,6 +17,7 @@
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Aspiring web developer seeking a full-time position in the Charlotte, North Carolina area."/>
         <title>Meredith Browne | Web Development Portfolio</title>
     </head>
     <body>
