@@ -44,6 +44,7 @@
                 <span>GitHub Version Control</span><br>
                 <span>Bootstrap Framework</span><br>
                 <span>Android Application Development</span><br>
+                <span>Prototype & Wireframe Creation</span>
             </div>
         </div>
     </div>  
