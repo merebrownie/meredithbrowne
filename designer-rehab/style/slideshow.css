@@ -1,0 +1,77 @@
+/**************************************************************************************/
+/*
+/*	  Designed by 'AS Designing'
+/*	  http://www.asdesigning.com
+/*
+/**************************************************************************************/
+
+#slideshow
+{
+/* 	float:left; */
+/* 	width: 970px; */
+	height: 280px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+#fading 
+{
+/* 	float:left; */
+/* 	width: 970px; */
+	height: 230px;
+/* 	margin: 20px 0px 15px 0px; */
+/* 	padding: 0px 0px 0px 80px; */
+	position: relative;
+	overflow: hidden;
+	background:transparent;
+}
+
+#fading img 
+{
+}
+
+	
+ul.pagination 
+{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+ul.pagination li 
+{
+	width: 60px;
+	height: 20px;
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+	margin: 0px 0px 10px 1px;
+}
+
+ul.pagination li a 
+{
+	display: block;
+	width: 60px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+
+ul.pagination li.current a, 
+ul.pagination li a:hover 
+{
+	background-position: 0% 0% !important;
+	filter:alpha(opacity=40);
+	opacity:0.4;
+	margin: 0px 0px 0px -1px;
+}
+
+ul.pagination li img 
+{
+	float: left;
+	margin: 0 ;
+}
+

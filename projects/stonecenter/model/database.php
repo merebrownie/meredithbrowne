@@ -3,8 +3,8 @@
 /* 
  * by meredith browne
  */
-
-    $dsn = 'mysql:host=localhost;dbname=stone_center';
+    $loc = $_SERVER['DOCUMENT_ROOT'] . '/projects/stonecenter';
+    $dsn = 'mysql:host=localhost;dbname=stepping_stones';
 //    $username = 'merebrownie';
 //    $password = 'brow4780';
     //$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
@@ -16,7 +16,7 @@
         $db = new PDO($dsn, $username);
     } catch (PDOException $e) {
         $error_message = $e->getMessage();
-        include 'errors/database_error.php';
+        include $loc . '/errors/database_error.php';
         exit;
     }
     

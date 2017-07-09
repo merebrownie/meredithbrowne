@@ -3,9 +3,9 @@
 /*
  * by meredith browne
  */
-
-require '../model/database.php';
-require '../model/therapist_db.php';
+$loc = $_SERVER['DOCUMENT_ROOT'] . '/projects/stonecenter';
+require $loc . '/model/database.php';
+require $loc . '/model/therapist_db.php';
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action === NULL) {

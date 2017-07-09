@@ -18,6 +18,7 @@
                         <li class="facebook"><a href="https://www.facebook.com/meredithlbrowne"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
                         <li class="linkedin"><a href="https://www.linkedin.com/in/meredithlbrowne"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                         <li class="github"><a href="https://github.com/merebrownie"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+                        <li class="gitlab"><a href="https://gitlab.com/meredithb"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -36,8 +37,10 @@
                 <span>HTML</span><br>
                 <span>CSS</span><br>
                 <span>PHP</span><br>
-                <span>JavaScript</span><br>
-                <span>MySQL</span><br>
+                <span>ASP</span><br>
+                <span>VBScript</span><br>
+                <span>JavaScript & jQuery</span><br>
+                <span>MySQL & Microsoft SQL Server</span><br>
                 <span>SCSS</span><br>
                 <span>Java</span><br>
                 <span>MVC Pattern</span><br>

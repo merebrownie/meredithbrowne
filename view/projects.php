@@ -13,14 +13,13 @@
                 <h2>Projects</h2>
                 <div class="row">
                     <div class="project-table col-md-4 col-sm-4">
-                        <a href="/hardingdesignco/" target="_blank">
-                            <h3>Harding Design Co.</h3>
-                            <img src="img/harding.jpg">
+                        <a href="http://www.treignright.com" target="_blank">
+                            <h3>TreignRight</h3>
+                            <img src="img/treignright.jpg">
                         </a>
                         <h4>Description</h4>
                         <span>*Under Development*</span><br>
-                        <span>PHP Web Application</span><br>
-                        <span>Bootstrap Framework</span>
+                        <span>3dcart E-Commerce Store</span><br>
                     </div>
                     
                     <div class="project-table col-md-4 col-sm-4">

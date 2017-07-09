@@ -3,6 +3,7 @@
 /* 
  * by meredith browne
  */
+include_once("util/analyticstracking.php");
 
 ?>
 <!DOCTYPE html>

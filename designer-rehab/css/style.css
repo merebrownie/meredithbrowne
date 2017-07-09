@@ -1,0 +1,46 @@
+body {
+	background-color: #F6F6F6;
+	font-family: 'book antiqua', palatino;
+ 	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	color: #3F3C38;
+	text-align: left;
+	vertical-align: top;
+    overflow:scroll;
+}
+
+.center {
+	margin:0 auto;
+}
+
+#slideshow ul {
+	list-style-type:none;
+}
+
+#footer
+{  
+/*   width: 970px; */
+  height: 45px;
+  border-top: 3px;
+  border-top-style: solid;
+  border-color: #5A5A5A;
+  margin: 30px 0px 0px 0px;
+}
+
+.s5_qc_button_wrap {
+	display:block;
+	margin-top:10px;
+}
+
+.carousel-indicators {
+	bottom:0px;
+}
+
+.center-block {
+	text-align:center;
+}
+
+#services ul {
+	list-style-type:none;
+}

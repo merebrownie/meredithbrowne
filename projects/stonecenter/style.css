@@ -1,0 +1,495 @@
+body,html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /*background-image: url("media/background.png");*/
+    
+    font-family: "Trebuchet-MS", Verdana, sans-serif;
+    font-size: 16px;
+    /*margin-bottom: 50px;*/
+}
+
+
+/*container*/
+#wrap {
+    width: 900px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -70px;
+    min-height: 100%;
+    position: relative;
+}
+
+/*Page Title*/
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    /*background-color: #E5EEAF;*/
+    margin-left: auto;
+    margin-right: auto;
+    color: #842240;
+}
+
+/*Section Headings*/
+h2 {
+    font-family: Georgia, serif;
+    background-color: #842240;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 0 auto;
+    width: 890px;
+    float: left;
+    margin-bottom: 15px;
+    height: 35px;
+    }
+    
+h3 {
+    font-family: Georgia, serif;
+    color: #000000;
+    /*margin: 2px;*/
+    width: 100%;
+}
+
+.sidebar h3 {
+    float: left;
+}
+
+.emphasize {
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+.nav {
+    float: left;
+    text-transform: uppercase;
+    font-size: 10pt;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.nav a {
+    display: block;
+    width: 175px;
+    float: left;
+}
+
+img {
+    margin: 1em;
+    float: left;
+    box-shadow: 5px 5px 5px #888888;
+    }
+
+div {
+    background: transparent;
+    /*background-color: #E5EEAF;*/
+    /*opacity: .20;*/
+}
+
+.screen {
+    /*opacity: .50;*/
+}
+
+/*navigation bar for all pages*/
+.nav {
+    background-color: #50987E;
+    z-index: 10;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    width: 880px;
+    padding: 10px;
+}
+
+.nav a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #C4E4A9;
+    text-decoration: none;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#active {
+    color: #C4E4A9;
+}
+
+/*right-aligned sidebar for main page*/
+.sidebar {
+    float: right;
+    width: 22%;
+    /*height: 400px;*/
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar label {
+    float: left;
+    text-align: left;
+    width: 45px;
+    font-size: 12px;
+}
+
+.sidebar input {
+    float: left;
+    width: 125px;
+}
+
+.sidebar input[type="submit"] {
+    /*float: left;*/
+    clear: both;
+    display: block;
+    background-color: #842240;
+    margin: 10px auto;
+    width: 100px;
+    /*margin-top: 10px;*/
+    padding: 5px 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sidebar li {
+    float: left;
+    text-align: left;
+    /*text-transform: uppercase;*/
+    font-family: cursive;
+    font-size: 18px;
+    padding: 2px;
+    /*list-style-type: none;*/
+}
+
+.sidebar a {
+    color: #000000;
+    font-size: 12pt;
+    /*font-style: italic;*/
+    display: inline;
+    list-style-type: georgian;
+    clear: both;
+    width: inherit;
+}
+
+#contact {
+    /*height: 1000px;*/
+    height: auto;
+}
+
+#about {
+    float: left;
+    width: 70%;
+    /*opacity: .80;*/
+    /*height: 500px;*/
+    height: auto;
+    margin: 0;
+}
+
+#about img {
+    border-radius: 5px;
+}
+
+
+.logo {
+    box-shadow: none;
+}
+
+/*footer for every page*/
+.footer {
+    bottom: 0;
+    /*position: absolute;*/
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    /*float: left;*/
+    color: #FFFFFF;
+    background-color: #7A9761;
+    font-family: Georgia;
+    font-size: 12px;
+    width: 880px;
+    height: 50px;
+    padding: 10px;
+    text-align: right;
+}
+
+#details {
+    clear: both;
+    display: none;
+    height: auto;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: 20px;
+    /*background-color: purple;*/
+    float: none;
+    font-family: "Trebuchet-MS", Verdana, sans-serif;
+}
+
+#details a{
+    display: inline;
+    color: #842240;
+    width: 175px;
+    float: none;
+}
+
+#button #showAll {
+    /*clear: both;
+    background-color: #CB6A87;
+    border: 5px solid #CB6A87;
+    color: #FFFFFF;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;*/
+    
+    float: none;
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    background-color: #842240;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding-left:  10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+#details #button {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*right-aligned sidebar*/
+.right {
+    float: right;
+    padding: 10px;
+    width: 22%;
+    /*height: 600px;*/
+    height: auto;
+    margin-top: 30px;
+}
+
+/*.right a:visited {
+    color: #000000;
+}*/
+
+/*form label for right-aligned sidebar*/
+.right label {
+    font-size: 12px;
+    width: 50px;
+    height: 7px;
+}
+
+/*text field for right-aligned sidebar*/
+.right input[class="text"] {
+    width: 130px;
+    height: 10px;
+}
+
+/*left-aligned content*/
+.left {
+    float: left;
+    width: 70%;
+}
+
+#billing {
+    float: left;
+    margin: 5px;
+}
+
+/*form labels*/
+label {
+    display: inline;
+    float: left;
+    text-align: left;
+    /*padding-top: 5pt;*/
+    width: 400px;
+    padding: 2px;
+    font-size: 16px;
+}
+
+/*labels for radio buttons*/
+label.radio {
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+/*form field*/
+input {
+    float: left;
+    margin: 2px;
+    font-family: "Trebuchet-MS", Verdana, sans-serif;
+    font-size: 11px;
+}
+
+textarea {
+    font-family: "Trebuchet-MS", Verdana, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/*text fields*/
+input[class="text"] {
+    width: 200px;
+    font-size: 11px;
+}
+
+/*radio buttons*/
+input[type="radio"] {
+    float: right;
+}
+
+/*form submit buttons*/
+[type="submit"] {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    background-color: #808F26;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding-left:  10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+[type="button"] {
+    float: none;
+    margin: 10px auto;
+    background-color: transparent;
+    color: #808F26;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding-left:  10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+/*required form fields*/
+.required {
+    font-weight: bold;
+}
+
+/*formatting for HIPPA disclosure*/
+.disclosure {
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: red;
+}
+
+#popUp {
+    clear: both;
+    z-index: 2;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    height: 200px;
+    width: 230px;
+    background: #96CBB9;
+    text-align: center;
+    border: dashed;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+#popUp span {
+    font-weight: bold;
+    
+}
+
+#popUp label {
+    text-align: left;
+    font-size: 12px;
+    display: inline-block;
+    /*height: 10px;*/
+    float: none;
+    padding: 0;
+    margin-left: 20px;
+    /*border: dotted 5px black;*/
+    width: 40px;
+}
+
+#popUp textarea {
+    width: 250px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#popUp input {
+    width: 200px;
+    display: inline;
+    height: 10px;
+    float: none;
+    /*text-align: right;*/
+    margin-right: 15px;
+}
+
+#popUp input[type="submit"] {
+    clear: both;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#unPopup {
+    z-index: 1;
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    top: 0px;
+    left: 0px;
+}
+
+div.close {
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.learnMore {
+    
+}
+
+#validate a{
+    color: grey;
+}

@@ -17,7 +17,7 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
         <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Meredith Browne | Web Development Portfolio</title>
