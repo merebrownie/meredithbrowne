@@ -1,9 +1,7 @@
 <?php
     $dsn = 'mysql:host=localhost;dbname=portfolio_contacts';
-//    $username = 'merebrownie';
-//    $password = 'brow4780';
     //$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-    $username = 'root';
+    $username = '';
     
     try {
         //$db = new PDO($dsn, $username, $password, $options);
