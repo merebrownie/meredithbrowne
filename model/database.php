@@ -1,12 +1,10 @@
 <?php
     $dsn = 'mysql:host=localhost;dbname=portfolio_contacts';
-    //$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-    $username = '';
+    $username = $_SERVER['DB_USER'];
+    $password = $_SERVER['DB_PASS'];
     
     try {
-        //$db = new PDO($dsn, $username, $password, $options);
-//        $db = new PDO($dsn, $username, $password);
-        $db = new PDO($dsn, $username);
+        $db = new PDO($dsn, $username, $password);
     } catch (PDOException $e) {
         $error_message = $e->getMessage();
         include 'errors/database_error.php';
